@@ -1,0 +1,306 @@
+/* 声明字体图标 */
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?mt856n');
+    src: url('../fonts/icomoon.eot?mt856n#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?mt856n') format('truetype'), url('../fonts/icomoon.woff?mt856n') format('woff'), url('../fonts/icomoon.svg?mt856n#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+
+/* 版心 */
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/*  快捷导航模块  */
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.fr li {
+    float: left;
+}
+
+#shortcut .w {
+    height: 30px;
+    line-height: 30px;
+    color: #999
+}
+
+#shortcut .w:focus {
+    outline: 0
+}
+
+#shortcut a {
+    color: #999
+}
+
+#shortcut a:hover {
+    color: #e33333
+}
+
+#shortcut .spacer {
+    overflow: hidden;
+    margin: 11px 5px 0;
+    width: 1px;
+    height: 10px;
+    background-color: #ccc
+}
+
+#shortcut .arrow_icon::after {
+    content: '\e909';
+    font-family: 'icomoon';
+    margin-left: 2px;
+}
+
+.iconfont {
+    font-family: 'icomoon';
+    font-style: normal;
+    color: gray;
+}
+
+#shortcut .iconfont-location,
+#shortcut .homepage {
+    font-family: 'icomoon';
+    font-size: 14px;
+    margin-right: 4px;
+    color: #f10215;
+}
+
+#header {
+    position: relative;
+    width: 100%;
+    height: 130px;
+    box-shadow: 2px 1px 1px gray;
+    background-color: #fff;
+}
+
+#header #logo {
+    position: absolute;
+}
+
+#header #logo h1 a {
+    display: block;
+    width: 190px;
+    height: 120px;
+    background: url(../images/logo.jpg) no-repeat;
+    font-size: 0;
+}
+
+#header #mobile {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    width: 76px;
+}
+
+#header #mobile .qrcode {
+    width: 66px;
+    height: 66px;
+    margin: 5px auto;
+    background: url(../images/qrcode.png);
+}
+
+#header #mobile:hover .mobile_pop_qrcode {
+    display: block;
+}
+
+#header #mobile:hover #header #mobile .qrcode {
+    display: none;
+}
+
+.mobile_pop_item {
+    position: relative;
+    z-index: 5;
+    padding: 15px 0;
+    /* border-bottom: 1px solid #e7e7e7; */
+}
+
+.mobile_pop_info {
+    margin: 0 10px 0 86px;
+    min-height: 70px;
+}
+
+.mobile_pop_tit {
+    font-size: 12px;
+    line-height: 17px;
+}
+
+.mobile_pop_value {
+    margin: 3px 0;
+    line-height: 14px;
+    color: #f10214;
+}
+
+.mobile_pop_tit,
+.mobile_pop_value {
+    float: left;
+}
+
+.mobile_pop_device,
+.mobile_pop_device_lk {
+    overflow: hidden;
+    height: 25px;
+}
+
+.mobile_pop_qrcode img {
+    width: 66px;
+    height: 66px;
+    margin: 2px 0 0 2px;
+    left: 0;
+}
+
+.mobile_pop_qrcode {
+    display: none;
+    /* position: absolute; */
+    left: 5px;
+    top: 14px;
+    width: 74px;
+    height: 74px;
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+}
+
+#header #search {
+    position: absolute;
+    width: 613px;
+    height: 45px;
+    border: 2px solid rgba(226, 35, 26, .9);
+    top: 20px;
+    left: 250px;
+}
+
+#header #search input {
+    float: left;
+    width: 490px;
+    height: 41px;
+    font-size: 16px;
+    border: 0;
+    padding-left: 10px;
+    color: rgb(175, 175, 175);
+}
+
+#header #search input::placeholder {
+    color: pink;
+}
+
+#header #search .iconfont {
+    float: left;
+    width: 30px;
+    height: 41px;
+    font-size: 20px;
+    line-height: 41px;
+    color: rgb(175, 175, 175);
+    margin-right: 5px;
+}
+
+#header #search button {
+    float: right;
+    width: 73px;
+    height: 41px;
+    border: 0;
+    background-color: #f10215;
+}
+
+#header #search button .iconfont {
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #fff;
+    line-height: 21px;
+    font-weight: bold;
+}
+
+#header #shopping_car {
+    position: absolute;
+    width: 162px;
+    height: 45px;
+    border: 1px solid rgb(238, 238, 238);
+    color: #f10215;
+    font-size: 20px;
+    line-height: 41px;
+    top: 20px;
+    left: 870px;
+}
+
+#header #shopping_car .iconfont {
+    color: #f10215;
+    margin: 0 15px;
+}
+
+#header #shopping_car .numb {
+    position: absolute;
+    top: 3px;
+    left: 29px;
+    padding: 1px 3px;
+    background-color: #f10215;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 12px;
+}
+
+#header #hotwords {
+    position: absolute;
+    top: 70px;
+    left: 250px;
+}
+
+#header #hotwords a {
+    margin-right: 10px;
+}
+
+#header #navitems {
+    position: absolute;
+    top: 100px;
+    left: 250px;
+}
+
+#header #navitems ul,
+#header #navitems ul li {
+    float: left;
+    font-size: 15px;
+}
+
+#header #navitems ul li {
+    margin-right: 20px;
+}
+
+#header #navitems ul li a[class^='fore'] {
+    font-weight: 700;
+    color: #e1251b;
+}
+
+.fs {
+    margin-bottom: 30px;
+}
+
+.fs,
+.fs_inner {
+    position: relative;
+}
+
+.fs_inner {
+    margin: 0 auto;
+    z-index: 1;
+    height: 480px;
+    background-color: #f4f4f4;
+}
+
+.fs_col1,
+.fs_col2 {
+    float: left;
+    height: 480px;
+    margin-right: 10px;
+}

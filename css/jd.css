@@ -1,0 +1,138 @@
+#shortcut {
+    border-bottom: 1px solid #ddd;
+    background-color: #e3e4e5
+}
+
+#shortcut .w {
+    height: 30px;
+    line-height: 30px;
+    color: #999
+}
+
+#shortcut .w:focus {
+    outline: 0
+}
+
+#shortcut a {
+    color: #999
+}
+
+#shortcut a:hover {
+    color: #e33333
+}
+
+#shortcut .shortcut_btn_company .dt a {
+    color: #f00
+}
+
+#shortcut .shortcut_btn_company .dt a:hover {
+    color: #e33333
+}
+
+#shortcut li {
+    float: left
+}
+
+#shortcut li.spacer {
+    overflow: hidden;
+    margin: 11px 5px 0;
+    width: 1px;
+    height: 10px;
+    background-color: #ccc
+}
+
+#shortcut .dt {
+    padding-left: 7px;
+    padding-right: 7px
+}
+
+#shortcut .dd {
+    line-height: 24px
+}
+
+#shortcut .style-red {
+    color: #f10215
+}
+
+.dorpdown,
+.shortcut_btn {
+    position: relative;
+    z-index: 21
+}
+
+.shortcut_btn:hover {
+    z-index: 22
+}
+
+.cw-icon {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    float: left;
+    border: 1px solid #e3e4e5
+}
+
+.fr .cw-icon {
+    padding-right: 20px!important
+}
+
+.fr .iconfont {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    width: 12px;
+    height: 12px;
+    line-height: 12px
+}
+
+.o2_ie7 .fr .iconfont,
+.o2_ie8 .fr .iconfont {
+    top: 9px
+}
+
+.dorpdown-layer,
+.dropdown-layer {
+    display: none;
+    position: absolute;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    -webkit-box-shadow: 1px 2px 1px rgba(0, 0, 0, .1);
+    box-shadow: 1px 2px 1px rgba(0, 0, 0, .1)
+}
+
+.dorpdown-layer:focus,
+.dropdown-layer:focus {
+    outline: 0
+}
+
+.clickHover .dropdown-layer,
+.dorpdown:hover .dorpdown-layer,
+.dropdown:hover .dropdown-layer,
+.shortcut_btn:hover .dropdown-layer {
+    display: block
+}
+
+.dorpdown:hover .cw-icon,
+.dropdown:hover .cw-icon,
+.shortcut_btn:hover .cw-icon {
+    padding-bottom: 2px;
+    border-color: #ccc;
+    border-bottom: none;
+    background-color: #fff
+}
+
+#shortcut .cw-icon {
+    height: 28px;
+    line-height: 28px
+}
+
+#shortcut .dorpdown-layer,
+#shortcut .dropdown-layer {
+    top: 30px
+}
+
+#ttbar-mycity .iconfont {
+    font-size: 14px;
+    color: #f10215;
+    margin-right: 4px
+}
