@@ -204,7 +204,7 @@
         }
         
         body section {
-            perspective: 700px;
+            perspective: 1000px;
         }
         /* 太极旋转  */
         
@@ -386,22 +386,32 @@
         }
         /* 旋转木马 */
         
-        .tupian0,
-        .spin {
-            position: relative;
-            margin: 100px auto;
+        .spin1,
+        .spin2 {
+            position: absolute;
+            display: block;
+            margin: 100px 50%;
             width: 234px;
             height: 254px;
-            background: url(images/erbao.jpg) no-repeat;
+            background: url(images/logo.jpg) no-repeat;
             transform-style: preserve-3d;
+        }
+        
+        .spin1 {
+            z-index: 1;
+            transform-origin: ;
             animation: shunxuanzhuan 10s linear infinite;
         }
         
-        .spin {
-            z-index: 1;
+        .spin1:hover {
+            animation-play-state: paused;
         }
         
-        .spin:hover {
+        .spin2 {
+            animation: nixuanzhuan 10s linear infinite;
+        }
+        
+        .spin2:hover {
             animation-play-state: paused;
         }
         
@@ -423,7 +433,6 @@
             }
         }
         
-        .tupian00,
         div[class^="pic"] {
             position: absolute;
             left: 0;
@@ -433,37 +442,75 @@
             background: url(images/erbao.jpg) no-repeat;
         }
         
-        .tupian0 {
-            background: no-repeat;
-            animation: nixuanzhuan 10s linear infinite;
-        }
-        
-        .tupian00 {
-            /* top: -320px; */
-        }
-        
         .pic1 {
-            transform: rotateY(0) translateZ(300px)
+            transform: rotateY(0) translateZ(500px)
         }
         
         .pic2 {
-            transform: rotateY(60deg) translateZ(300px);
+            transform: rotateY(60deg) translateZ(500px);
         }
         
         .pic3 {
-            transform: rotateY(120deg) translateZ(300px);
+            transform: rotateY(120deg) translateZ(500px);
         }
         
         .pic4 {
-            transform: rotateY(180deg) translateZ(300px);
+            transform: rotateY(180deg) translateZ(500px);
         }
         
         .pic5 {
-            transform: rotateY(240deg) translateZ(300px);
+            transform: rotateY(240deg) translateZ(500px);
         }
         
         .pic6 {
-            transform: rotateY(300deg) translateZ(300px);
+            transform: rotateY(300deg) translateZ(500px);
+        }
+        /* 旋转珠串子 */
+        
+        .outer {
+            /**定义子元素水平居中**/
+            display: flex;
+            justify-content: center;
+            width: 100px;
+            height: 100px;
+            left: 50%;
+            top: 700px;
+            background-color: #6a5acd8c;
+            position: relative;
+        }
+        
+        .inner {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #6a5acdeb;
+            transform-origin: 50% 50px;
+            animation: an-circle 3s ease-in-out infinite;
+        }
+        
+        .inner:nth-child(2) {
+            height: 18px;
+            width: 18px;
+            animation-delay: .2s;
+        }
+        
+        .inner:nth-child(3) {
+            height: 16px;
+            width: 16px;
+            animation-delay: .4s;
+        }
+        
+        .inner:nth-child(4) {
+            height: 14px;
+            width: 14px;
+            animation-delay: .6s;
+        }
+        
+        @keyframes an-circle {
+            to {
+                transform: rotate(1turn);
+            }
         }
     </style>
 </head>
@@ -584,7 +631,7 @@
     <br>
     <!-- 旋转木马 -->
     <section>
-        <div class="spin">
+        <div class="spin1">
             <div class="pic1"></div>
             <div class="pic2"></div>
             <div class="pic3"></div>
@@ -592,10 +639,22 @@
             <div class="pic5"></div>
             <div class="pic6"></div>
         </div>
-        <div class="tupian0">
-            <div class="tupian00"></div>
+        <div class="spin2">
+            <div class="tupian0"></div>
         </div>
     </section>
+    <!-- 旋转珠串子 -->
+    <section>
+        <div class="outer">
+            <div class="inner"></div>
+            <div class="inner"></div>
+            <div class="inner"></div>
+            <div class="inner"></div>
+        </div>
+    </section>
+
+
+
 </body>
 
 </html>
